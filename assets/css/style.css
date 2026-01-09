@@ -1,1 +1,214 @@
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+ }
+ body,
+ html {
+     scroll-behavior: smooth;
+ }
 
+ /* header */
+ #header,
+ #navbar,
+ #contact-information {
+     background: darkblue;
+     color: white;
+ }
+ #header {
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     padding: 10px 16px;
+
+ }
+ /* navbar */
+ #navbar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 16px;
+     gap: 50px;
+ }
+ #navbar .navbar-items ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+     list-style-type: none;
+     padding: inherit;
+ }
+ a {
+     text-decoration: none;
+     color: white;
+ }
+
+ a:hover {
+ letter-spacing:0.5px;
+ }
+ /* main  */
+ #main {
+     padding: 50px;
+ }
+ /* section  */
+ .section {
+     padding: 25px;
+     text-align: center;
+ }
+ /* educationWeb  */
+ #educationWeb{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+    padding:0px 20px;
+ }
+ #educationWeb #sites{
+    display:flex;
+    /* grid-template-columns: repeat(8,1fr); */
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    overflow-x: scroll;
+    padding:10px 0px;
+ }
+ #educationWeb #sites::-webkit-scrollbar
+ {
+    display:none;
+ }
+ #educationWeb .site{ 
+    width:80px;
+    height:80px;
+    border: 1px solid gray;
+    display:flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ /* contact-information  */
+ #contact-information {
+     display: flex;
+     position: fixed;
+     flex-direction: column;
+     padding: 10px;
+     right: 10px;
+     bottom:75px;
+     border-radius:8px;
+ }
+ #contact-information div a i {
+     font-size: 25px;
+     margin: 5px
+ }
+  /* classes  */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .subjects
+{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+    flex-wrap: wrap;
+}
+.container .subjects .card{
+    padding:10px;
+    box-shadow: 0px 0px 2px gray;
+    border-radius:3px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+.fontSize{
+    font-size: 80px;
+}
+.container .subjects .card  button{
+    width:100%;
+    height:30px;
+    border:none;
+    outline:none;
+    background:darkblue ;
+    color:white;
+    border-radius: inherit;
+    cursor: pointer;
+}
+
+ /* contact us  */
+ #form-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ #form-container form{
+    padding:40px;
+    width:40%;
+    height:auto;
+    box-shadow: 0px 0px 2px gray;
+    margin:16px 0px;
+ }
+ #form-container form input{
+    width:100%;
+    height:35px;
+    padding: 0px 10px;
+    font-size:16px;
+ }
+ #form-container form textarea{
+    width:100%;
+    padding:5px 10px;
+    height:80px;
+    font-size:16px;
+ }
+  #form-container form input[type="submit"]{
+    background: darkblue;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius: 3px;
+    cursor: pointer;
+ }
+ /* footer  */
+ #footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 30px 10px;
+     background-color: black;
+     color: white;
+ }
+ #footer #footer-contents p {
+     margin: 10px 0px;
+ }
+
+ @media screen and (max-width:768px) {
+     #navbar {
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     #navbar .navbar-items ul {
+         gap: 20px;
+     }
+     #form-container form{
+        width:80%;
+     }
+     .container .subjects{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+     }
+     /* #educationWeb #sites{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+     } */
+ }
