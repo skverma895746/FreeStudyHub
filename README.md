@@ -7,8 +7,7 @@ GreesStudyHub is an educational platform designed to help students learn program
 ---
 
 ## 🌐 Live Demo
-🔗 https://FreeStudyHub.netlify.app  
-*(replace with your actual link)*
+🔗 https://FreeStudyHubb.netlify.app  
 
 ---
 
