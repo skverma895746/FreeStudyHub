@@ -185,11 +185,11 @@
  #footer #footer-contents p {
      margin: 10px 0px;
  }
- @media screen and (min-width:768px)and (max-width:1000px) {
+ @media screen and (min-width:769px)and (max-width:1000px) {
      .container .subjects
     {
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(3,1fr);
     gap:25px;
     margin:20px 0px;
 }
@@ -216,4 +216,5 @@
      } */
 
  }
+
 
