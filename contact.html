@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- externalcss -->
+</head>
+
+<body>
+    <div id="container">
+        <!-- contact-icons  -->
+        <div id="contact-information">
+            <div>
+                <a href="contact.html" title="Contact Us"> <i class="fa fa-address-book"></i> </a> <br>
+                <a href="#" title="Telegram"> <i class="fa-brands fa-telegram"></i> </a>
+            </div>
+
+        </div>
+        <!-- header  -->
+        <header id="header">
+            <div>
+                <h1> 🎓FreeStudyHub</h1>
+            </div>
+        </header>
+        <!-- navbar  -->
+        <nav id="navbar">
+            <div class="navbar-items">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="classes9th.html">Class 9</a></li>
+                    <li> <a href="classes10th.html">Class 10</a></li>
+                </ul>
+            </div>
+            <div class="navbar-items">
+                <ul>
+                    <li> <a href="classes11th.html">Class 11</a></li>
+                    <li> <a href="classes12th.html">Class 12</a></li>
+                    <li> <a href="Diploma.html">Diploma</a></li>
+                    <li> <a href="Btech.html">B.tech</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- main  -->
+        <main id="main">
+            <div>
+                <marquee direction="left" behavior="alternate" scrollamount="8" scrolldelay="100" loop="infinite">
+                    <h1> Welcome to FreeStudyHub</h1>
+
+                </marquee>
+            </div>
+        </main>
+        <section id="form-container">
+            <center>
+                <h2> 📝Contact Us</h2>
+            </center>
+            <br>
+            <form name="contact" method="POST" data-netlify="true">
+                <!-- Netlify hidden field -->
+                <input type="hidden" name="form-name" value="contact">
+
+                <label for="name">👤 Name:</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter name" required>
+                <br><br>
+
+                <label for="email">📧 Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter email" required>
+                <br><br>
+
+                <label for="message">📝 Message:</label><br>
+                <textarea name="message" id="message" placeholder="Type message..." required></textarea>
+                <br><br>
+
+                <input type="submit" value="📤 Send">
+            </form>
+
+
+        </section>
+        <br>
+        <!-- footer  -->
+        <footer id="footer">
+            <div id="footer-contents">
+                <h2>🎓 FreeStudyHub</h2>
+                <p>Free Learning for Everyone.</p>
+
+                <p>
+                    <a href="index.html"> Home</a>
+                    <a href="classes9th.html">|Class 9 </a>
+                    <a href="classes10th.html"> |Class 10</a>
+                    <a href="classes11th.html">| Class 11 </a>
+                    <a href="classes12th.html">| Class 12 </a>
+                    <a href="Diploma.html">|Diploma </a>
+                    <a href="Btech.html">| B.Tech </a>
+                </p>
+
+
+                <p>
+                    <i> © 2025 FreeStudyHub. All Rights Reserved.
+                        The content provided on this website is for free educational use only.
+                    </i>
+                </p>
+
+            </div>
+        </footer>
+        <!-- maincontainerend -->
+    </div>
+    <!-- javascript -->
+    <script src="js.script"></script>
+</body>
+
+</html>
