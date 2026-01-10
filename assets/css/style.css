@@ -8,6 +8,7 @@
  html {
      scroll-behavior: smooth;
      background:whitesmoke;
+     background-attachment:fixed;
  }
 
  /* header */
@@ -219,4 +220,5 @@
         gap:20px;
      } */
  }
+
 
