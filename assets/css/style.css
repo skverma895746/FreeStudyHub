@@ -136,7 +136,7 @@
     padding:10px;
     border:none;
     outline:none;
-    background:darkblue ;
+    background:#020264 ;
     color:white;
     border-radius: inherit;
     cursor: pointer;
@@ -193,7 +193,7 @@
  @media screen and (min-width:769px) and (max-width:1000px) {
      .container .subjects
     {
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:25px;
     margin:20px 0px;
 }
@@ -220,5 +220,6 @@
         gap:20px;
      } */
  }
+
 
 
