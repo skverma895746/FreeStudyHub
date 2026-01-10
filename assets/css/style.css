@@ -154,6 +154,7 @@
     height:auto;
     box-shadow: 0px 0px 2px gray;
     margin:16px 0px;
+    background: white;
  }
  #form-container form input{
     width:100%;
@@ -218,3 +219,4 @@
         gap:20px;
      } */
  }
+
