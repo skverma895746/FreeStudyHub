@@ -16,8 +16,10 @@
         <!-- contact-icons  -->
         <div id="contact-information">
             <div>
-                <a href="contact.html" title="Contact Us"><i class="fa-solid fa-message"></i> </a> <br>
-                <a href="#" title="Telegram"> <i class="fa-brands fa-telegram"></i> </a>
+                <a href="contact.html" title="Contact Us"><i class="fa-solid fa-message"></i> </a>
+                </div>
+                <div>
+                <a href="#" onclick="shareWebsite()" title="Share this page"><i class="fa-solid fa-share"></i></a>
             </div>
 
         </div>
@@ -25,6 +27,9 @@
         <header id="header">
             <div>
                 <h1> 🎓FreeStudyHub</h1>
+            </div>
+             <div>
+                <div id="alive"></div>
             </div>
         </header>
         <!-- navbar  -->
@@ -59,10 +64,7 @@
                 <h2> 📝Contact Us</h2>
             </center>
             <br>
-           <form
-                  action="https://formspree.io/f/xreezaaq"
-                  method="POST" target="_blank"
-                 >
+            <form id="contactForm" action="https://formspree.io/f/mdaaokvy" method="POST">
 
                 <label for="name">👤 Name:</label><br>
                 <input type="text" name="name" id="name" placeholder="Enter name" required>
@@ -75,8 +77,14 @@
                 <label for="message">📝 Message:</label><br>
                 <textarea name="message" id="message" placeholder="Type message..." required></textarea>
                 <br><br>
+                <input type="checkbox" id="agree" name="agree">
+                I agree to the Terms & Conditions
+                </label>
+                <br><br>
 
-                <input type="submit" value="📤 Send">
+                <input type="submit" value="📤 Send" id ="btn">
+                <br>
+                <span id ="error-message"></span>
             </form>
 
 
@@ -110,11 +118,6 @@
         <!-- maincontainerend -->
     </div>
     <!-- javascript -->
-    <script src="js.script"></script>
+     <script src="../assets/js/script.js"></script>
 </body>
-
-
 </html>
-
-
-
