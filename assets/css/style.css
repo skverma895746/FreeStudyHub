@@ -239,7 +239,7 @@
      background-color: #020264;
      color: white;
      margin: 20px 0px;
-     padding: 20px 10px;
+     padding: 20px 0px;
      border-radius: 50px;
  }
 
@@ -409,6 +409,7 @@
          gap: 20px;
      }
  }
+
 
 
 
