@@ -55,14 +55,14 @@
  #navbar {
      height: 60px;
      display: flex;
-     justify-content: center;
+     justify-content:center;
      align-items: center;
-     padding: 20px;
+     padding:0px 25px;
      gap: 50px;
      position: sticky;
      top: 0;
  }
-#navbar #logo{
+ #navbar #logo{
     width:50px;
     height:50px;
     border-radius: 50%;
@@ -76,6 +76,7 @@
     filter: contrast(1.5);
     object-fit: contain;
  }
+
  #navbar .navbar-items ul {
      display: flex;
      justify-content: center;
@@ -89,7 +90,7 @@
      height: 300px;
  }
 
- #navbar #menu-icon,#navbar #logo{
+ #navbar #menu-icon,#navbar #logo {
      display: none;
      font-size: 30px;
      font-weight: bolder;
@@ -127,13 +128,19 @@
 
  /* section  */
  .section {
-     padding: 25px 20px;
-     border-radius: 60px 0px 60px 0px;
-     background-color: #020264;
-     color: white;
-     margin-top: 20px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 20px;    
  }
-
+.section #content{
+    width:95%;
+    padding:40px;
+    background-color: #020264;
+     border-radius: 60px 0px 60px 0px;
+     color: white;
+}
  .section p::first-letter {
      font-size: 20px;
      font-weight: bolder;
@@ -153,8 +160,7 @@
      align-items: center;
      gap: 30px;
      overflow-x: scroll;
-     padding: 10px 0px;
-
+     padding: 10px 0px;   
  }
 
  #educationWeb #sites .site {
@@ -167,7 +173,6 @@
      overflow: hidden;
      animation: scroll 15s linear infinite;
  }
-
  @keyframes scroll {
      from {
          transform: translateX(1100px);
@@ -177,18 +182,15 @@
          transform: translateX(-1100px);
      }
  }
-
  #educationWeb #sites .site img {
      width: 100%;
      height: 100%;
      filter: contrast(1.2);
      object-fit: contain;
  }
-
  #educationWeb #sites::-webkit-scrollbar {
      display: none;
  }
-
  /* contact-information  */
  #contact-information {
      display: flex;
@@ -201,7 +203,6 @@
      bottom: 80px;
      z-index: 1000;
  }
-
  #contact-information div {
      display: flex;
      justify-content: center;
@@ -212,44 +213,40 @@
      border-radius: 50px 50px 50px 0px;
      backdrop-filter: blur(1.5);
  }
-
  #contact-information div img {
      width: 40px;
      height: 40px;
      border-radius: 50%;
      filter: contrast(1.2);
      object-fit: contain;
-
  }
-
  #contact-information div a i {
      font-size: 25px;
  }
-
  /* classes  */
  .container {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     background-color: #020264;
-     color: white;
      margin: 20px 0px;
-     padding: 20px 0px;
-     border-radius:60px;
  }
-
  .container .subjects {
+     width:95%;
      display: grid;
      grid-template-columns: repeat(6, 1fr);
-     gap: 15px;
+     gap:15px;
      justify-content: center;
      align-items: center;
      margin: 20px 0px;
+    background-color: #020264;
+    border-radius:60px;
+    padding:50px;
  }
-
  .container .subjects .card {
      padding: 10px;
+     width:150px;
+     height:200px;
      text-transform: capitalize;
      box-shadow: 0px 0px 2px rgb(36, 35, 35);
      border-radius: 8px;
@@ -263,16 +260,13 @@
      color: black;
      border-top: 3px solid #020264;
  }
-
  .card:hover {
      transform: translateY(-6px);
      transition: 0.3s;
  }
-
  .fontSize {
      font-size: 80px;
  }
-
  .container .subjects .card>button {
      width: 100%;
      padding:8px 15px;
@@ -283,28 +277,31 @@
      border-radius: inherit;
      cursor: pointer;
  }
-
  /* contact us  */
  #form-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+ }
+ #form-container #form{
+    width:80%;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
      padding: 20px;
      background-color:#020264;
-      color:white;
-     border-radius:60px;
-
+     color: white;
+     border-radius:25px;
  }
-
  #form-container form {
-     padding: 40px;
-     width: 40%;
+     padding:40px;
+     width:60%;
      height: auto;
      box-shadow: 0px 0px 2px gray;
      margin: 16px 0px;
      background: white;
-     color:black;
+     color: black;
      border: 1px solid gray;
      border-radius: 20px;
      backdrop-filter: blur(1.5);
@@ -407,12 +404,3 @@
          gap: 20px;
      }
  }
-
-
-
-
-
-
-
-
-
