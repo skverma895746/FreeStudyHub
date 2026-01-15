@@ -398,7 +398,7 @@
      #form-container #form {
          width: 90%;
      }#form-container #form form {
-          width:90%;
+          width:100%;
      }
 
      .container .subjects {
@@ -406,6 +406,7 @@
          gap: 20px;
      }
  }
+
 
 
 
