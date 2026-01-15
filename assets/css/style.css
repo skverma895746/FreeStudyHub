@@ -395,7 +395,7 @@
         background: #002300;
      }
 
-     #form-container form {
+     #form-container #form {
          width: 90%;
      }
 
@@ -404,3 +404,4 @@
          gap: 20px;
      }
  }
+
