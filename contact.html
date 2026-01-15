@@ -2,10 +2,26 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="icon" href="logo.png">
+
+    <title>FreeStudyHub - Contact Us</title>
+    <meta name="description" content="Free study material for Class 9 to B.Tech students">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jigyasu-raj.github.io/FreeStudyHub/contact.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Contact Us">
+    <meta property="og:description" content="Students can contact us.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jigyasu-raj.github.io/FreeStudyHub/contact.html">
+    <meta property="og:image" content="https://jigyasu-raj.github.io/FreeStudyHub/assets/images/logo.png">
+
+    <!-- Image Size (Recommended) -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- externalcss -->
@@ -16,10 +32,12 @@
         <!-- contact-icons  -->
         <div id="contact-information">
             <div>
-                <a href="contact.html" title="Contact Us"><i class="fa-solid fa-message"></i> </a>
-                </div>
-                <div>
-                <a href="#" onclick="shareWebsite()" title="Share this page"><i class="fa-solid fa-share"></i></a>
+                <a href="contact.html" title="Contact Us"><img src="assets/images/message.png" alt=" image not found">
+                </a>
+            </div>
+            <div>
+                <a href="javascript:void(0)" id ="shareWebsite" title="Share this page">
+                    <img src="assets/images/share.png" alt=" image not found"></a>
             </div>
 
         </div>
@@ -28,7 +46,7 @@
             <div>
                 <h1> 🎓FreeStudyHub</h1>
             </div>
-             <div>
+            <div>
                 <div id="alive"></div>
             </div>
         </header>
@@ -39,26 +57,26 @@
                     <li> <a href="index.html">Home</a></li>
                     <li> <a href="classes9th.html">Class 9</a></li>
                     <li> <a href="classes10th.html">Class 10</a></li>
-                </ul>
-            </div>
-            <div class="navbar-items">
-                <ul>
                     <li> <a href="classes11th.html">Class 11</a></li>
                     <li> <a href="classes12th.html">Class 12</a></li>
                     <li> <a href="Diploma.html">Diploma</a></li>
                     <li> <a href="Btech.html">B.tech</a></li>
                 </ul>
             </div>
+            <div id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
         <!-- main  -->
         <main id="main">
+            <br><br>
             <div>
-                <marquee direction="left" behavior="alternate" scrollamount="8" scrolldelay="100" loop="infinite">
-                    <h1> Welcome to FreeStudyHub</h1>
-
-                </marquee>
+                <div>
+                    <h1 class="page-title">Welcome to FreeStudyHub</h1>
+                </div>
             </div>
         </main>
+        <br>
         <section id="form-container">
             <center>
                 <h2> 📝Contact Us</h2>
@@ -82,9 +100,9 @@
                 </label>
                 <br><br>
 
-                <input type="submit" value="📤 Send" id ="btn">
+                <input type="submit" value="📤 Send" id="btn">
                 <br>
-                <span id ="error-message"></span>
+                <span id="error-message"></span>
             </form>
 
 
@@ -95,7 +113,6 @@
             <div id="footer-contents">
                 <h2>🎓 FreeStudyHub</h2>
                 <p>Free Learning for Everyone.</p>
-
                 <p>
                     <a href="index.html"> Home</a>
                     <a href="classes9th.html">|Class 9 </a>
@@ -105,8 +122,6 @@
                     <a href="Diploma.html">|Diploma </a>
                     <a href="Btech.html">| B.Tech </a>
                 </p>
-
-
                 <p>
                     <i> © 2025 FreeStudyHub. All Rights Reserved.
                         The content provided on this website is for free educational use only.
@@ -118,7 +133,7 @@
         <!-- maincontainerend -->
     </div>
     <!-- javascript -->
-     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-</html>
 
+</html>
