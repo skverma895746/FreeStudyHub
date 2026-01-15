@@ -397,7 +397,7 @@
 
      #form-container #form {
          width: 90%;
-     }#form-container #form{
+     }#form-container #form form {
           width:90%;
      }
 
@@ -406,5 +406,6 @@
          gap: 20px;
      }
  }
+
 
 
