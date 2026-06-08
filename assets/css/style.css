@@ -449,7 +449,22 @@
  #footer #footer-contents p {
      margin: 10px 0px;
  }
+  /* desktop view  */
+@media screen and (min-width: 769px) {
+     #main,
+     .homepage-section,
+     .container,
+     #form-container #form {
+         width: calc(100% - 40px);
+         margin-left: auto;
+         margin-right: auto;
+     }
 
+     .container .subjects {
+         margin: 20px auto;
+     }
+ }
+ /* tablet view  */
 @media screen and (max-width:768px){
     #main {
         width: calc(100% - 20px);
@@ -472,7 +487,7 @@
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
-
+ /* mobile view  */
  @media screen and (max-width:767px) {
      #header h1 {
          font-size: 1.65rem;
@@ -551,3 +566,5 @@
      }
 
  }
+
+
