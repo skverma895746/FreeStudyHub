@@ -119,8 +119,9 @@
 
  /* main  */
  #main {
-     width: min(1080px, calc(100% - 32px));
-     margin:50px auto 0px;
+     width: 100%;
+     max-width: 1080px;
+     margin: 50px auto 0;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -174,7 +175,8 @@
  }
 
  .homepage-section {
-     width: min(1080px, calc(100% - 32px));
+     width:calc(100% - 20px);
+     max-width: 1080px;
      margin: 28px auto 0;
      gap: 18px;
  }
@@ -302,7 +304,7 @@
  }
 
  /* classes  */
- .container {
+ .container { 
      display: flex;
      justify-content: center;
      align-items: center;
@@ -311,10 +313,13 @@
  }
 
  .container .subjects {
+     width: 100%;
+     max-width: 1080px;
      display: grid;
-     grid-template-columns: repeat(6, 1fr);
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
      gap: 15px;
-     place-items: center;
+     place-items: stretch;
+     place-content: center;
      margin: 20px 0px;
      background-color:var(--color-primary-soft);
      border-radius:20px;
@@ -323,8 +328,6 @@
 
  .container .subjects .card {
      padding: 10px;
-     width: 150px;
-     height: 200px;
      text-transform: capitalize;
      box-shadow: 0px 0px 2px var(--color-text-muted);
      border-radius: 8px;
@@ -447,19 +450,30 @@
      margin: 10px 0px;
  }
 
- @media screen and (min-width:769px) and (max-width:1000px) {
-     .container .subjects {
-         grid-template-columns: repeat(4, 1fr);
-         gap: 25px;
-         margin: 20px 0px;
+@media screen and (max-width:768px){
+    #main {
+        width: calc(100% - 20px);
+        padding: 34px 18px;
+        margin-top: 30px;
+    }
+
+     #main .page-title {
+         font-size: 32px;
      }
 
-     .container .subjects .card {
-         width: 150px;
+     .home-subtitle {
+         font-size: 1rem;
      }
- }
+     .container{
+        width: calc(100% - 20px);
+        margin:0px auto;
+     }
+    .container .subjects {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
 
- @media screen and (max-width:768px) {
+ @media screen and (max-width:767px) {
      #header h1 {
          font-size: 1.65rem;
      }
@@ -497,6 +511,9 @@
          line-height: 30px;
          box-shadow: 0px 0px 2px var(--color);
      }
+    .container .subjects{
+        grid-template-columns: repeat(2,minmax(150px,1fr));
+    }
 
      #navbar .navbar-items ul li:hover {
          background: var(--color-footer-accent);
@@ -509,12 +526,6 @@
 
      #form-container #form form {
          width: 100%;
-     }
-
-     .container .subjects {
-         grid-template-columns: repeat(2, 1fr);
-         padding: 20px;
-         gap: 20px;
      }
 
      #main {
